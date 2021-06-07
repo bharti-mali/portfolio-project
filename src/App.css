@@ -7,6 +7,9 @@ body{
   --primary-white:#fff;
 }
 /*------------logo--------------*/
+nav{
+  z-index: 2;
+}
 .logo{
   width: 14rem;
 }
@@ -24,3 +27,67 @@ nav a.nav-link{
 .navbar-light .navbar-nav .nav-link:hover{
   border-top: 0.1878rem solid orange;
 }
+/*========Header================*/
+.header-wrapper{
+  background-image: url('computers.png');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: orange;
+  text-transform: uppercase;
+  z-index: 1;
+ 
+}
+.typed-text{
+  font-size: 2rem;
+  color: #fff;
+}
+@media(max-width:768){
+  .main-info{
+    font-size: 1.5rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem;
+  }
+}
+
+.btn-main-offer{
+  border:1px solid red;
+  border-radius: 0;
+  padding: 10px 12px 12px 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 2rem;
+  text-decoration: none;
+}
+.btn-main-offer:hover{
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  transition: .2s ease-in-out;
+}
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+}
+@media (max-width:700) {
+  .particles-canvas{
+    display: none;
+  }
+}
+
